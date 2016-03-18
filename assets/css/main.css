@@ -85,14 +85,14 @@
 	body {
 		height: 100%;
 		background-color: #ffffff;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+		/*background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
 		background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
 		background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
 		background-repeat: repeat,			no-repeat,			no-repeat;
 		background-size: 100px 100px, cover,				cover;
 		background-position: top left,		center center,		bottom center;
-		background-attachment: fixed,			fixed,				fixed;
+		background-attachment: fixed,			fixed,				fixed; */
 	}
 
 		body:after {
@@ -106,7 +106,7 @@
 			opacity: 0;
 			z-index: 1;
 			background-color: #ffffff;
-			background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+			/*background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
 			background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
 			background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
 			background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
@@ -116,7 +116,7 @@
 			-moz-transition: opacity 1.75s ease-out;
 			-webkit-transition: opacity 1.75s ease-out;
 			-ms-transition: opacity 1.75s ease-out;
-			transition: opacity 1.75s ease-out;
+			transition: opacity 1.75s ease-out; */
 		}
 
 		body.is-loading:after {
@@ -169,7 +169,7 @@
 		}
 
 		a:hover {
-			color: #ff7496;
+			color:#F2CF4C;
 		}
 
 	strong, b {
@@ -185,7 +185,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #313f47;
+		color: #3b444c;
 		line-height: 1.5;
 		margin: 0 0 0.75em 0;
 	}
@@ -546,7 +546,7 @@
 					}
 
 					ul.icons li a:hover:before {
-						text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
+						text-shadow: 1.25px 0px 0px #F2CF4C, -1.25px 0px 0px #F2CF4C, 0px 1.25px 0px #F2CF4C, 0px -1.25px 0px #F2CF4C;
 					}
 
 					ul.icons li a:before {
@@ -562,7 +562,7 @@
 					}
 
 					ul.icons li a:hover {
-						border-color: #ff7496;
+						border-color: #F2CF4C;
 					}
 
 			@media screen and (max-width: 480px) {
@@ -733,8 +733,10 @@
 			#main .avatar img {
 				display: block;
 				margin: 0 auto;
-				border-radius: 100%;
-				box-shadow: 0 0 0 1.5em #ffffff;
+				width:30%;
+
+				/*border-radius: 100%;*/
+				/*box-shadow: 0 0 0 1.5em #ffffff;*/
 			}
 
 			#main .avatar:before {
@@ -746,7 +748,7 @@
 				width: calc(100% + 6em);
 				height: 1px;
 				z-index: -1;
-				background: #c8cccf;
+				/*background: #c8cccf;*/
 			}
 
 		@media screen and (max-width: 480px) {
@@ -781,12 +783,12 @@
 		align-self: flex-end;
 		width: 100%;
 		padding: 1.5em 0 0 0;
-		color: rgba(255, 255, 255, 0.75);
+		color:#c8cfd6;
 		cursor: default;
 		text-align: center;
 	}
 
-		#footer .copyright {
+		#footer .#right {
 			margin: 0;
 			padding: 0;
 			font-size: 0.9em;
@@ -795,8 +797,8 @@
 
 			#footer .copyright li {
 				display: inline-block;
-				margin: 0 0 0 0.45em;
-				padding: 0 0 0 0.85em;
+				margin: 0;
+				padding: 0;
 				border-left: solid 1px rgba(255, 255, 255, 0.5);
 				line-height: 1;
 			}
