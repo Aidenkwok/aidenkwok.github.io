@@ -4,7 +4,23 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+var quotes = [
+  "Designer",
+  "Developer",
+  "Technology enthusiast",
+  "Student"
+]
 
+function fadeInAndOut(divID, quotes, interval) {
+  setInterval(function () {
+    $(divID).fadeOut(600, function() {
+      $(this).text(quotes[Math.floor(Math.random() * quotes.length)]);
+      $(this).fadeIn('slow');
+    });
+  }, interval);
+}
+
+fadeInAndOut('#introtitle', quotes, 3000);
 
 $(document).ready(function() {
     $("#intro").show();
