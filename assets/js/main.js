@@ -6,7 +6,7 @@
 
 var quotes = [
   "Designer",
-  "Developer",
+  "Front end developer",
   "Technology enthusiast",
   "Student"
 ]
