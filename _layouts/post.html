@@ -1,0 +1,39 @@
+---
+layout: navWhite
+---
+
+<div class="post-container">
+  <div class="grid-container">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+    <article class="post">
+
+      {% if page.img %}
+        <img class="postImg" src="{{ site.baseurl }}/assets/img/{{ page.img }}">
+      {% endif %}
+
+      {% if page.img2 %}
+        <img class="postImg" src="{{ site.baseurl }}/assets/img/{{ page.img2 }}">
+      {% endif %}
+
+      {% if page.vid %}
+        {{ page.vid }}
+      {% endif %}
+
+      <div class="imgExtra">
+        {% if page.imgExtra %}
+          {% for item in page.imgExtra %}
+            <img src="{{ site.baseurl }}/assets/img/{{ item }}">
+          {% endfor %}
+        {% endif %}
+      </div>
+
+    </article>
+  </div>
+</div>

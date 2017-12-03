@@ -1,0 +1,8 @@
+---
+layout: whiteGreenNav
+---
+<ul class="worklist">
+  {% for post in site.categories.print %}
+   <li><a class="green" href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
