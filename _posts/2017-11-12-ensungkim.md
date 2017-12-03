@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 3d
+categories: physicalobjects
 title: Limited Edition
 img: ensung1.jpg
 imgExtra:

@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 3d
+categories: physicalobjects
 title: Not all who wander are lost
 img: notallwhowander.jpg
 imgExtra:
