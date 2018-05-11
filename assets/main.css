@@ -71,12 +71,20 @@ a {
     list-style: none;
     margin: 0; }
     .whitecontainer ul li {
+      background-color: white;
       color: black;
-      padding: 30px;
+      margin: 23px;
+      padding: 7px;
       text-align: center; }
       .whitecontainer ul li a {
         color: black;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        transition: 0.2s ease-in-out;
+        -webkit-transition: 0.2s ease-in-out; }
+        .whitecontainer ul li a:hover {
+          border-bottom: solid 2px;
+          transition: 0.2s ease-in-out;
+          -webkit-transition: 0.2s ease-in-out; }
   .whitecontainer #bottomNav {
     position: absolute;
     bottom: 0;
@@ -90,11 +98,14 @@ a {
     .whitecontainer .worklist li {
       padding: 0.3em;
       font-size: 3em; }
-    .whitecontainer .worklist a {
-      text-transform: lowercase; }
-      .whitecontainer .worklist a:hover {
-        border-bottom: solid 3px;
-        transition: 0.2s ease-in-out; }
+      .whitecontainer .worklist li a {
+        text-transform: lowercase;
+        transition: 0.2s ease-in-out;
+        -webkit-transition: 0.2s ease-in-out; }
+        .whitecontainer .worklist li a:hover {
+          border-bottom: solid 3px;
+          transition: 0.2s ease-in-out;
+          -webkit-transition: 0.2s ease-in-out; }
 
 .green {
   color: #50E3C2 !important;
@@ -118,8 +129,8 @@ a {
   font-weight: normal;
   margin: 0 0.4em; }
 
-.post-title {
-  padding-top: 2em; }
+.post-header {
+  padding-top: 7em; }
 
 .post {
   margin-bottom: 3em; }
@@ -155,3 +166,37 @@ a {
 
 .page-content {
   max-width: 22em; }
+  .page-content p {
+    max-width: 40em; }
+
+.backBtn {
+  color: grey;
+  transition: 0.2s;
+  -webkit-transition: 0.2s; }
+  .backBtn:hover {
+    color: white;
+    transition: 0.2s;
+    -webkit-transition: 0.2s; }
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+#bothLink {
+  margin-top: 2em; }
+  #bothLink a {
+    color: grey;
+    transition: 0.2s;
+    -webkit-transition: 0.2s; }
+    #bothLink a:hover {
+      color: white;
+      transition: 0.2s;
+      -webkit-transition: 0.2s; }
+
+.white {
+  color: white; }
+
+.uppercase {
+  text-transform: uppercase; }
