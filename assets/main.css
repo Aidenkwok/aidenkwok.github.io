@@ -164,10 +164,8 @@ a {
     width: 50%;
     height: 50%; }
 
-.page-content {
-  max-width: 22em; }
-  .page-content p {
-    max-width: 40em; }
+.page-content p {
+  max-width: 40em; }
 
 .backBtn {
   color: grey;
